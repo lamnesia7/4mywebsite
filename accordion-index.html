@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <style>
+    body {
+        color: white;
+    }
+</style>
+
+    <meta charset="UTF-8" />
+    <title>9-2-2 任意の場所をクリックすると隠れていた内容が開き、先に開いていた内容が閉じる</title>
+    <meta name="description" content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" type="text/css" href="https://lamnesia7.github.io/4mywebsite/generic-design-style.css">
+    <link rel="stylesheet" type="text/css" href="https://lamnesia7.github.io/4mywebsite/accordion-css-style.css">
+</head>
+<body>
+   
+    <ul class="accordion-area grid">
+        <!-- First list with multiple images -->
+        <li class="item">
+            <section>
+                <h3 class="title">Simulation</h3>
+                <div class="box item-content">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV84AEuq2Z-LZvfWpyECrUZyQveUF4I9Tr-29_sTMdjYob_ADIbl84rosfsW5JyCBk9is0IqoITN5n3mGwocvUKqJBjK-R6bSJKH77seZ_Mn4IBPvUg=s200-p-k" alt="Energy Simulation" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV84HJKpEDeHq34QIltBo4yG-D31voEPHtkMsZP8Xi4S20QpcXpchGXqvhFtuWL-dm6L9NK0ziQ6mHwh3KJa2g-FEAxcZkjw10HpPCgUGxFrAsMmzQA=s200-p-k" alt="Comfort Assessment" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85p0K0usr-bRGxQJ6nOlm18mZjVZHCMXjPlw3754Am7HFIp30kWGxIsofM6gbmATcSjG1qQC5NmWOp1ZWaq4jlC1H7WF8mWw0E5qmKISPDunaxqtTY=s200-p-k" alt="Life Cycle Assessment(LCA)" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV84cBBfrhT0Ewn-N8BBhfIw8DGTQkyosRpzh5Rzdgp_7iiZ0Cw9XGJdKqJGV04Cj3oSueQyYmYiwPaYDubQ_mwdfwxPQCIcQlTUDSo6sfLaj0rNa50w=s200-p-k" alt="CFD Simulation" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85LwxvUL96MDGSQS7m_VThspCF7cH8eQ1b3bit3hsWm-mpMs2ded6ApVkUQF07de4d8xwW5AiG24LE-kXiEbKy4urh6RYl6pAeM9CMwFu80NyE5L54=s200-p-k" alt="Daylighting Lighting Simulation" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV844O7DTkASnCz5QhAIz4gMm2Itwja1EO4ZpfVmiAnETHmpjD2EciMJvTcQK8_DtRKa_EenFN8xU5dhjVd_ynWzuikcvTSzWLyhD4fII9TnYB7KZsNU=s200-p-k" alt="Acoustic Simulation" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85EQXX1tlAEWCXNCX4D9vtr0mX_3Y4FZLlUqqogY3Hjl4EKXrpjnAAbEv-XBHQVaVVmuFrX3NTy5EEQQ0DwEmWr3tJf-CuBM4zoXGbUnmXIap0Ji7M=s200-p-k" alt="Basic Structural Simulation" style="color: black;">
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1YD209Pdj5CfMWWeZ4gXVIbeeWiVfCZZb" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1FQht0OUOynD13OFOqiarWc2PKG_OC9M8" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1iscT2OD0OcNJMbK8edaCe_w8Owrd6ZiH" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1lyrOR41VUnVnF6LlomEQsjmujbGFh8h4" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=19V7RiUqqtN9NbB7bSLhurL9DUzHTxYxF" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1reVaZzffwuRv5zCVflGqHGWiRpq6UZFe" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1ntrnumUWSoEQmRzxZxCQeHLeUrmQwHFY" -->
+                    <!-- Add more images if needed -->
+                </div>
+            </section>
+        </li>
+
+        <!-- Second list with multiple images -->
+        <li class="item">
+            <section>
+                <h3 class="title">CAD/ BIM/ 3D Modelling</h3>
+                <div class="box item-content">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV84cTdxCEqVgH4KT5XNfKJa2mHVmy8fh37SdvUpPvtnusXHqTritvmHTIbtKV21i619Rd1bztWucyUDQTa94HGmv19pfIDG8YqNAi9ZtFGOdFPsT8g=w200-h225-p-k" alt="Rhinoceros" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV87y1s3r64vVC2GbIGISRpDOjm-tVXq0mpHys31VojTvXma3n1484I1Q-lAScH9Uldmjp0OCT1L0zR2HjTn6tHLvUre23UFha4YkJy-b50OTdHGIBg=w200-h225-p-k" alt="Revit" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV84S2x4OEVgcvbdMDkoO2URV5tqJ0otSlDQ7tJJbfxnH55czzThUT1tYxCRG425UjFWZt9321zFcZZpO3vj-LjzG8FpX2_Eoyq0H1OuhAXGvgWGz6w=w200-h224-p-k" alt="ArchiCAD" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV84hgYPrlbce9T5ffLlHmiSMQhZiqWXwuBtsgZa-ereG21bYJZFRpidx8YfXOvWUkOjyY61SabAsObErn3z8QqfgHiEXJX3avnxqwJ9Wl0tUF4uhlw=w200-h223-p-k" alt="AutoCAD" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV84E_t6mlXBI-i03ipktfkvxn_fZmcfiimIe-qYHWq18j7KpUa5EMAeAXUu5QrOC8rJobr9jEdXjegRS1ZI01gFJ239FrKNhH3aw-iac9eR6NVbPsw=w200-h225-p-k" alt="Sketchup" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV87xcbkJvQgUtVbW07HV54CCC7Zmp1-D-Sm400eOWC4gP_7_XLnOz0cFU8eh7NUAq4nsnCl56J1tk9M15mItcFSoYekPSEFRqz08tuKRI0hUItkSxQ=w200-h225-p-k" alt="Blender" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85S_8ZNoKpgWzt3x1YzQ5Zcy2bVUCqkXYtwGFSv2ku0J7B5x-7iyPF2N723A7z_CYABGLFEnUTOQD1RaX_b02Wk6rlSpD1xyEEzQ7L55LnAJhhcRg=w200-h225-p-k" alt="3DSMax" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85MEmThwTY-3CeOJEJje1PevBQv2WlnDonsR74BfRYq8N2QtJUZTNP-DWZ8kXh1bt6MYzROeNZOWRe5AmXaqYVvD3rkIfR-ThBWoa0Q3qFjqf-Dig=w200-h225-p-k" alt="Vectorworks" style="color: black;">
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1c6LrvLqH7Sl6oMLWbQXH2gsvPnbnhnkT" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1CHZp2lAVaFETXwKkbm5yIcWroAfBIVbx" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1LDIx1z914a-1Bpn4g9_NoOqzVuuNZ1mk" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1HF6shBuNYAq2bQz8LhTkpaqDIZPRk0HA" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1RCMgB7mrl4HxL7UOw8VbK6SaFJdUDs5_" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1MyzTK-6bm70OsPC_jpUW_dcyhCUxBSJy" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1QC1hURmfggpEKgIeL7j-zXrbWTP3PVnu" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1qCLmS7KrpSIp_t77z32gPXV2PZ02csLq" -->
+                    <!-- Add more images if needed -->
+                </div>
+            </section>
+        </li>
+
+        <!-- Third list and so on... -->
+	<li class="item">
+            <section>
+                <h3 class="title">Render</h3>
+                <div class="box item-content">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV86Uunu1LqfD4iz0GBduXLVimcgqPRSLd4CxRqDDSGTAcHmHP4_7IIGZ45W_M6WJwc1tmpGxjsXOKIJPPFcMDevtMLTaYYouBOgmOzYj333JbEKhMQ=w200-h225-p-k" alt="Lumion" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85UhAYG_ltjFAeW6yDTpt0F5gflu-MKmdZtu2wDz08BtC-rb3GK44k227vH2R676cOyI76pLgm5EZpwHzx0OlZnx18u8MbxTcgUZopkE0J47wZxXg=w200-h225-p-k" alt="V-ray" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV84gvNzhT8QrQ7Nf-LK_QuplMPAN2d37h-VdSynRiqrwQAw20-jO47oEqtTYUz05hf9FjEwKUMbwOo1zIJT33vHoC7kc5mS4OGK7SAgWAYzaXjWgCA=w200-h225-p-k" alt="Twinmotion" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV84NHK6XFf_vYP3RjRyFhv_C5QVETG8QbErVSlW9aEPPCBQGW-cVpTcLNUU8t4TgkFpklqZXESnhsGhLPwXIT7mP2sOfWjRMWzswJK3UQ9mAM1eM6Q=w200-h225-p-k" alt="D5 Render" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV87M0xCHkoPOVZTA_hW9LdSKCDeTVxDd_U4vKqajgl1idYV6L3KnyxrZNItLzdWUGZVSydtyG8VDKwrIT7Wh75PV5gX5EDgRcwXI67hhT8_a5mqIZg=w200-h225-p-k" alt="Enscape" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV86ot_YYtDph7zf5uG43mm-_F7LTIZvwIBON55YM_k3e4Wp5RDb5-LBpqGT-VXIKIvhMIVUnBFKHuMku4gZp7kXqwtsDxMy3O83ikNmcOOlcXGI3yw=w200-h223-p-k" alt="Keyshot" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85iZ4W2Egj8kiWIs2NQk7JhGcwx5618s_fOJi169B_IuX0S9UEmbo22cwVUtiDyXYOHCRD63JWR1HvYjpe0iBpl5WGFInVTlGLSJABLTQxi4SucNw=w200-h225-p-k" alt="Maxwell" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85Z68KOn2NzUbyj95pPWi-v08-30ubwc3wXa6CkqbtmZQiDmtE3bLjP1rudZNUpCMGqYnOOqa6OeT4yRD_MkpCZVRMmwufvHaq90yOWascRTCb4LA=w200-h225-p-k" alt="Omniverse" style="color: black;">
+                    <!-- img src="https://drive.google.com/uc?export=view&id=19BgBbpnO6R9kD_7keTw03irFNhydU9Oh" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1pD040sYaU6oIHkKXVkvMDGgxYU3pHSZP" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1orIR7udPyAIp2IOTk2dOSrFfMPBDjKUM" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=10TBp8Fu7sL7uaVXJ5cL763Luf6z5T1uE" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1EMIpacpMz1FrtH3Hc5UOZhqiuYp6vl_U" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=17sQm4_Q1z-m5r6aNKgds2BGd0LR84Q9v" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1WHMmhojXSdb0SDZPKoAJsF73GLsf1HGF" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1e6ZAyoZBPQH5n5II6jsIWNcddTEoNYNR" -->
+                    <!-- Add more images if needed -->
+                </div>
+            </section>
+        </li>
+
+
+
+        <!-- Third list and so on... -->
+	<li class="item">
+            <section>
+                <h3 class="title">Adobe</h3>
+                <div class="box item-content">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85R5LaAk6RTha1S8tZfhcwQ8_nUe6TgrYJbqYBAVfXC72C7cttoEDDx97siBukX8vBnLHNzp4ia342TnlBO483ZyLFGsKtH2Es_bpFQoMDpF8BHyQ=w200-h225-p-k" alt="Illustrator" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85QzWlMtu-UAbIHGSSY3pePIQX_IVzR4rAcIoFhynHvT8RRiEWp-fgBAVLH6f8sjJR0CiytMRUZq1tLfgc4sE2LYSZhwWES-ZjDaiRlsXOPGx-0zA=w200-h225-p-k" alt="Photoshop" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85pHiNBYVBDd7Owqf05jQi2tD2S-3zqae3fl-neUHnNk0dGo53s11BpQdgJiXMGns92bzIRDLxCNqk7cEqzXs5UMYRJvhLqnB5QWytq6wR99t85kQ=w200-h225-p-k" alt="Indesign" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV862rov5RFwMgbT9gQIKwArWA0vd2TKTTPocci1iXCq40ZSGeot-qcDDH0NVfiEi9U7F3pZ1yfFI1VIQczue7fapKqgLVjWQvsQBGTpejTtN8kri5g=w200-h225-p-k" alt="AfterEffect" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85HWbA4LNL7aFriEUZ0_c-nfFIxygdwNBMRrU8ko-6CqPtYjSLzEDSc-UwhkdF7sC1ZJI6xqvx6fQzEVqsPzJFl4h6hUj4Yau3IFhZ0WzQ4aKqDXQ=w200-h220-p-k" alt="PremierePro" style="color: black;">
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1xsssckYradog99LftbaEhWVkSNcl-8E_" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1tolnYsyiF72wuH_CZPzPZOCqUS42iO5c" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1bgObg6ZfRo2dgi1sJuo01wgMRdUl7Npf" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1dW5IIcn803Cg0MWrVDRWsZSz_rXgqiMB" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1S1bz6gdSq0Gy_vf4owk-phl7TcxvtpB0" -->
+                    <!-- Add more images if needed -->
+                </div>
+            </section>
+        </li>
+
+        <!-- Third list and so on... -->
+	<li class="item">
+            <section>
+                <h3 class="title">Coding</h3>
+                <div class="box item-content">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV86mYg1V2DjbZ_2cHzVgYntTAiVPC4xBsfH7JqTqUlPTjMY1zfXo0oGZZv54xwybQnPyY2ftfFJOQ0OaXYM3HLA6Y4-xZMspzb62L4OTnmhOlX8DWQ=w200-h224-p-k" alt="Grasshopper" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV87Bq9sHRTTBoHy2wS-CnfedipfrFiL2bWimhxmj75NVYF6yvZpAqMpZj4RllGAnHPPfKJqhm6Mk0GrUJJOy1L8rL_1A6biecOOKThF4eSGpp6N85Q=w200-h224-p-k" alt="Python" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV87YEkRpEDniuHqnaK4TKFIwFf6BwIGkOBktvuqROSkCjhDG-N62yl8QywkrANAUmq9VaolNCYRiSQDEwNL7rJ00aS4HhNLp2jxjv8o-AGvTYGVPTw=w200-h224-p-k" alt="HTML" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85QjcApGWzcIt0E7nfb_mXYFdmaR46-oV1-YzIN1_rGvn0O-OG2DkeeWjaznAdZCcCGtHyiRbMp1jGaCkWKGD0FyAvuqS6pzaCal9xVqYsTPyoqpQ=w200-h225-p-k" alt="CSS" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85s9hTYb2QsOcD2Y63gtIQWI_1YYg_zz5GFIPkBtADfUTwGgNQsYb_fIY5GIMxqdOdFtTGvTxQVg1cUbwxdm-MF57zDlhEEF7bpgwKniKx62yKAEw=w200-h224-p-k" alt="Java Script" style="color: black;">
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1Xu4-CkhrDlvmOmbCV1jJaQWkHnqgKBEi" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1yVCA00HLldYWtwiJ0k_B8DSaLEsKkhrL" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1t-4p2Vmvu9WP8Mo69WlUlMjlzUE-eBnA" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1Dnwxn0U0QpCAnsvlcH9Tykd7m2hFoMgQ" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1Gg_pzP5V-sP_BNK501QljIloUutnhREJ" -->
+                    <!-- Add more images if needed -->
+                </div>
+            </section>
+        </li>
+
+
+        <!-- Third list and so on... -->
+	<li class="item">
+            <section>
+                <h3 class="title">Production</h3>
+                <div class="box item-content">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV87XcNkotbntFHBTb9jigotqsX--0aI2V_PAhxxF5HCk7RhX3QhwxYwYOo-gOZJq4NUYNHuULpIHCzvY1cxF_JYyyfD_n0pKElW3rLQsrqH0gMMdog=w200-h225-p-k" alt="3D Print" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV87AabCgpTGEnjTpFBTAdpH8zg9g1J7-e4WVHGjOfnTtY3wpPa7VENaHiG83yaCgk7Zk2SDsK5wcVJfHD_2j0M1C9rIw_6lsyxSduyG-YeOKJZGRQg=w200-h224-p-k" alt="Laser Cut" style="color: black;">
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1b8EDIE1EJ2JP58XnhjyUgfhtBGRAMrD8" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1Geoh4wUgZES_yTZkJwM-EzuKwyyTWz0f" -->
+                    <!-- Add more images if needed -->
+                </div>
+            </section>
+        </li>
+
+
+        <!-- Third list and so on... -->
+	<li class="item">
+            <section>
+                <h3 class="title">Microsoft Office</h3>
+                <div class="box item-content">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV87KHlx9MgYc7I4XByL2J_8p2fpVwP3cl4sjSRd029U0USwuyK-3csfdHETzkzFjU43Nj92K3J7M7vmXjg5y3kPNLZSFlaUJ_CSaJkA5TT7eJSr3yA=w200-h224-p-k" alt="Word" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV87jPbte4x0AcqgHQYSAYHQcnyHXgQ2hQyalPjNkmcCGQCfg9bpzJiwFzw9r6TcBC08nF-Z2QlVacatYrjMqHz64NNoioSS-AVOuDuhvXwSSYNrm4g=w200-h224-p-k" alt="PPT" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV840ztfN1QBsHBbkTHNbNqDevWBzA5xQkYqjA4uxFitAfvdCqs25i9kFDjGr85rUTMoI9KEIh83gnq2tl-zumrnzL3xu8hVXZ5Y7ump5Cx2cirOk7A=w200-h224-p-k" alt="Excel" style="color: black;">
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1DdrSTwkc-HOXaOLovi3Z1tRbPIOfAyPV" alt="Word" style="color: black;" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1uMeCExPiEtQVXeKngItDipS8jDufLswP" alt="PPT" style="color: black;" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=1ADZzR_ngZco5O4nZvUw_LkResZSGL55W" alt="Excel" style="color: black;" -->
+                    <!-- Add more images if needed -->
+                </div>
+            </section>
+        </li>
+
+
+        <!-- Third list and so on... -->
+	<li class="item">
+            <section>
+                <h3 class="title">Language</h3>
+                <div class="box item-content">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV875coDuIOXs7luz0ns49cy1bU0htnmnkPt4E1u1PE39MrXb6EbeeBSP-fZj2ua84MllBIzNNxUuHYQlTzGgdpvILUN-KoankJ2RZ6SVC8ftLBW6pg=w200-h225-p-k" alt="English" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV844x8WxIZP071U68EYvCytBRjK8tLzTq7rCZDS4IN48_IIdvWGsUNn7tupCWUzsjfOk1GYo396SrUfopS7h5QgId_QCAUuttQsS5wsOWkkkzNQYww=w200-h225-p-k" alt="Japanese" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV876ZDec27_7m353_ZBQgeRdAmMeEe60j4fE13k-cERoKcxNVcguDvGKx5zqgUzzZZYh5b5Hypgaw8vUdrimfw6WInwpZ4trP20X3HhKG0QE__wKBQ=w200-h225-p-k" alt="French" style="color: black;">
+                    <img src="https://lh3.googleusercontent.com/pw/ABLVV85S_Xu9MHjVOB7AclO3HyAPQf2zC3kQkp5rTUTIqC0WiALXMe0HlPS1UuyENGTHf7f_0gotCM-FpeWWCtqNVUlENF7uG8O05I1u6XK1U0vLB2Jr0A=w200-h227-p-k" alt="Spanish" style="color: black;">
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1Yt6WRAxZ-1VyFDkZyZzqzcmHH-cy1l7K" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=16fUaN2lQD0qfReqgv9OCVQHQCRyiM2Nu" -->
+		            <!-- img src="https://drive.google.com/uc?export=view&id=14qlNSOpgyzkTnrFno4tGtyPqM6jW0mnM" -->
+                    <!-- img src="https://drive.google.com/uc?export=view&id=1c7npImceskkWXU3daM-wVlNEOg7zKmk5" -->
+                    <!-- Add more images if needed -->
+                </div>
+            </section>
+        </li>
+
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.title').on('click', function() {
+                $('.box').slideUp(500);
+
+                var findElm = $(this).next(".box");
+
+                if ($(this).hasClass('close')) {
+                    $(this).removeClass('close');
+                } else {
+                    $('.close').removeClass('close');
+                    $(this).addClass('close');
+                    $(findElm).slideDown(500);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
